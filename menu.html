@@ -1,1 +1,143 @@
-menu.html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<ul class="topnav" id="myTopnav">
+ <li><a class="active" href="C:\Users\library\Desktop\Index\home.html">Home</a></li>
+  <li><a href="C:\Users\library\Desktop\Index\menu.html">Menu</a></li>
+  <li><a href="C:\Users\library\Desktop\Index\contactus.html">Contact</a></li>
+  <li><a href="C:\Users\library\Desktop\Index\reviews.html">Reviews</a></li>
+  <li><a href="C:\Users\library\Desktop\Index\location.html">Location</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<div style="padding-left:16px">
+  <h2>Welcome To Los Polos Hermanos</h2>
+ 
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<section class="menu-panel">
+  <h2>Menu items
+  
+        
+  <h3>Breakfast served from 7am-11am</h3>
+  <p class="Chicken Pot Pie"</p>
+
+  <h4><span>Breakfast</span></h4>
+  <ul class="menu-items">
+    <li>
+      <strong>Eggs, scrambled or sunnyside with sausage and coffee.</strong>
+      
+    </li>        
+    <li>
+      <strong>Other side itmes</strong>
+      <span class="descript"> Oatmeal either cinnamon apple or mixed berry, assorted soups and sandwiches. </span>            
+    </li>
+  </ul>       
+</section>
+
+
+<h4><span>Lunch Box Specials!</span></h4>
+  <p class="box-intro"> <span>Our chicken box meals.</span></p>
+  <ul class="tasting-options">
+    <li>
+      <h5>3 piece spicy thai chicken with side of fries and drink<h5>
+      <p>Choose from a variety of options from our menu or make your own combo of choice!.</p>
+    </li>            
+    <li>
+      <h5>Dinner Deals</h5>
+      <p>Big box meals with 14,18,20 piece options your choice of mild or spicy.</p>
+	  <p> Try our famouse poutine made with house made gravy and delicious blue cheese curds!</p>
+	  <p> Chicken burger offerings such as chicken ranch, spicy bacon and chicken as well as our top seller triple thick chicken patty burger!</P>
+    </li>   
+    <li>
+      <h5>Drinks & beverages</h5>
+      <p>Choose from variety of Pops and juices (ask for availability). </p>
+    </li>  
+  </ul>
+  <p class="tasting-meta"></p>
+</aside>
+
+<dl class="Deserts">
+  <dt>vanilla cone chocolate cone ,banana split sundae,fried banana served with mango ice cream.</dt>
+  <dd>Enjoy desert on the go! take 10% off takeout.</dd>
+
+  <dt>Side Orders</dt>
+  <dd>Fries Large or Small,Side brownies, side poutine, side drinks and juices.</dd>
+   
+</dl>
